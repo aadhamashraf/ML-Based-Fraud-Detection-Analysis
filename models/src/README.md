@@ -13,7 +13,7 @@ This notebook demonstrates the complete end-to-end workflow for detecting fraudu
 
 ## 🧾 Dataset
 
-- **Input File:** `/kaggle/input/creditcardfraud/creditcard.csv`
+- **Input File:** [Credit Card Fraud Detection](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
 - **Test File:** `/kaggle/input/classification-test-file-csv/Classification_Test_file.csv`
 
 The dataset contains anonymized features (V1 to V28), `Time`, `Amount`, and a binary `Class` label indicating fraudulent (1) or legitimate (0) transactions.
@@ -52,4 +52,14 @@ The dataset contains anonymized features (V1 to V28), `Time`, `Amount`, and a bi
 
 ---
 
-## 🧠
+## 🧠Input Layer: 48 neurons, ReLU
+
+Hidden Layer 1: 24 neurons, ReLU
+
+Hidden Layer 2: 12 neurons, ReLU
+
+Output Layer: 2 neurons, Softmax
+
+Visualized using plot_model() with shapes and layer names.
+
+## ✅ Result **Validation F1 Score after training:** `0.999824`
